@@ -1,0 +1,38 @@
+﻿<!--always needed DOCTYPE, head and meta-->
+<!DOCTYPE html>
+<html>
+@*always neeeded*@
+<head>
+    <meta charset="utf-8" />
+
+    <!--To ensure proper rendering and touch zooming to be responsive to mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Medical Registrationn</title>
+
+    <!--to render Styles and Scripts-->
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <!--navbar = navigation bar
+        navbar-inverse  = black pattern bar
+        navbar-fixed-top = the navbar stays at the top visible even when you scroll down-->
+    <div class="navbar navbar-inverse navbar-fixed-top"></div>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Patient", "Index")</li>
+                <li>@Html.ActionLink("Staff", "About")</li>
+                <li>@Html.ActionLink("Contact", "")</li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+                <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+            </ul>
+        </div>
+    </div>
+    @RenderBody()
+</body>
+</html>
+
+

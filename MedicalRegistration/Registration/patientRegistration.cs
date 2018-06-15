@@ -18,8 +18,18 @@ namespace MedicalRegistration.Registration
         public void CreatePatient(string firstName, string lastName, string address, string city,
             string state, string zip)
         {
-            var IdNumber = (db.Patients.Count()).ToString.PadLeft(10, '0');
-            var Patient = new Patient { FirstName = FirstName, Las }
+            var IdNumber = (db.Patients.Count()).ToString().PadLeft(10, '0');
+            var Patient = new Patient
+            {
+                FirstName = firstName,
+                LastName = lastName,
+                Address = address,
+                City = city,
+                State = state,
+                ZIP = zip
+            };
+            db.Patients.Add(Patient);
+            db.SaveChanges();
         }
     }
 }

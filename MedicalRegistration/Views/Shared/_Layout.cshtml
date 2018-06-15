@@ -17,13 +17,13 @@
     <!--navbar = navigation bar
         navbar-inverse  = black pattern bar
         navbar-fixed-top = the navbar stays at the top visible even when you scroll down-->
-    <div class="navbar navbar-inverse navbar-fixed-top"></div>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <ul class="nav navbar-nav">
                 <li>@Html.ActionLink("Patient", "Index")</li>
                 <li>@Html.ActionLink("Staff", "About")</li>
                 <li>@Html.ActionLink("Contact", "")</li>
+                <li>@Html.ActionLink("Accounts", "Details", "Account")</li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
@@ -32,6 +32,9 @@
         </div>
     </div>
     @RenderBody()
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
 </body>
 </html>
 

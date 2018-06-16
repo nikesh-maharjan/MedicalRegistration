@@ -13,14 +13,15 @@ namespace MyMedicalRegistration.Controllers
     public class HomeController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
+      
         public ActionResult Index()
         {
-            var userId = User.Identity.GetUserId();
-            var patientId = db.Patients.Where(c => c.ApplicationUserId == userId).First().Id;
-            ViewBag.PatientId = patientId;
+            //    var userId = User.Identity.GetUserId();
+            //    var patientId = db.Patients.Where(c => c.ApplicationUserId == userId).First().Id;
+            //    ViewBag.PatientId = patientId;
 
-            var manager = HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
-            var user = manager.FindById(userId);
+            //    var manager = HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
+            //    var user = manager.FindById(userId);
 
             return View();
         }

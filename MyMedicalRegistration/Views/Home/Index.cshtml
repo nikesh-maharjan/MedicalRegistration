@@ -2,18 +2,47 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="row">
-    <div class="col-md-6 margin-top-20">
-        <a href="#" class="btn btn-primary btn-large btn-block" class="glyphicon glyphicon-user"></span>Encounters &raquo;</a>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 margin-top-20 ">
+            <a href="#" class="btn btn-primary btn-large btn-block" <span class="glyphicon glyphicon-user"></span>Encounters &raquo;</a>
+            <a href="#" class="btn btn-primary btn-large btn-block"><span class="glyphicon glyphicon-asterisk"></span>Labs &raquo;</a>
+        </div>
+        <div class="col-md-4 margin-top-20 ">
+            <a href="@Url.Action("Details", "Patient")" class="btn btn-primary btn-large btn-block"><span class="glyphicon glyphicon-question-sign"></span> Balance Inquiry</a>
+            <a href="@Url.Action("Details", "Patient")" class="btn btn-primary btn-large btn-block"><span class="glyphicon glyphicon-question-sign"></span> Balance Inquiry</a>
+        </div>
+        <div class="col-md-4">
+            <a href="#" class="btn btn-primary btn-large btn-block"><span class="glyphicon glyphicon-facetime-video"></span>Radiology &raquo;</a>
+            <a href="" class="btn btn-primary btn-large btn-block"><span class="glyphicon glyphicon-zoom-out"></span>Other Results &raquo;</a>
+        </div>
+    </div>
+</div>
+
+@*<div class="col-md-2 margin-top-20 ">
+        <a href="#" class="btn btn-primary btn-large btn-block" <span class="glyphicon glyphicon-user"></span>Encounters &raquo;</a>
+    </div>
+
+    <div class="col-md-2 margin-top-20 ">
         <a href="#" class="btn btn-primary btn-large btn-block"><span class="glyphicon glyphicon-asterisk"></span>Labs &raquo;</a>
+    </div>
+
+    <div class="col-md-2 margin-top-20 ">
         <a href="#" class="btn btn-primary btn-large btn-block"><span class="glyphicon glyphicon-facetime-video"></span>Radiology &raquo;</a>
     </div>
 
-    <div class="col-md-6 margin-top-20">
+    <div class="col-md-2 margin-top-20">
         <a href="" class="btn btn-primary btn-large btn-block"><span class="glyphicon glyphicon-zoom-out"></span>Other Results &raquo;</a>
+    </div>
+
+    <div class="col-md-2 margin-top-20">
         <a href="@Url.Action("Details", "Patient")" class="btn btn-primary btn-large btn-block"><span class="glyphicon glyphicon-question-sign"></span> Balance Inquiry</a>
     </div>
-</div>
+
+    <div class="col-md-2 margin-top-20">
+        <a href="@Url.Action("Details", "Patient")" class="btn btn-primary btn-large btn-block"><span class="glyphicon glyphicon-question-sign"></span> Balance Inquiry</a>
+    </div>*@
+
 @*
         <div class="row">
             <div class="col-md-6">

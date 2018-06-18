@@ -29,13 +29,16 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        <div class=”row”>
-            <div class="col-md-12">
-                <img src="~/Content/Healthcare background1.jpg" class="img-responsive center-block" />
+    <div class="container">
+        <div class=”jumbotron” style="background-image: url('../../Content/images/healthcare_3.jpg') ;
+        background-size: cover ; ">
+            <div class="container for-categories">
+                @RenderBody()
             </div>
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </div>
-        @RenderBody()
+
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - My Medical Registration Application</p>

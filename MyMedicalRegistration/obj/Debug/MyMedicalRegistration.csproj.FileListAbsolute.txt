@@ -237,4 +237,4 @@ C:\Users\Shadow\source\repos\MedicalRegistration\MyMedicalRegistration\obj\Debug
 C:\Users\Shadow\source\repos\MedicalRegistration\MyMedicalRegistration\obj\Debug\MyMedicalRegistration.csproj.CopyComplete
 C:\Users\Shadow\source\repos\MedicalRegistration\MyMedicalRegistration\obj\Debug\MyMedicalRegistration.dll
 C:\Users\Shadow\source\repos\MedicalRegistration\MyMedicalRegistration\obj\Debug\MyMedicalRegistration.pdb
-C:\Users\Shadow\source\repos\MedicalRegistration\MyMedicalRegistration\obj\Debug\MyMedicalRegistration.csprojResolveAssemblyReference.cache
+C:\Users\Shadow\source\repos\MedicalRegistration\MyMedicalRegistration\obj\Debug\MyMedicalRegistration.csprojAssemblyReference.cache
